@@ -1,0 +1,38 @@
+
+ Dataset Overview
+- Total entries: 27,901
+- Columns**: 18
+- Primary target variable**: `Depression` (Binary: 0 or 1)
+
+---
+
+Column Summary
+
+| Column | Type | Notes |
+|--------|------|-------|
+| `id` | int | Unique identifier |
+| `Gender` | object | Mostly “Male” or “Female” |
+| `Age` | float | 18 to 59 years |
+| `City` | object | 52 unique values |
+| `Profession` | object | 14 professions (mostly “Student”) |
+| `Academic Pressure` | float | Scale 0–5 |
+| `Work Pressure` | float | Scale 0–5 (mostly 0) |
+| `CGPA` | float | 0–10 scale |
+| `Study Satisfaction` | float | Scale 0–5 |
+| `Job Satisfaction` | float | Mostly 0 (many unemployed?) |
+| `Sleep Duration` | object | 5 categories like "5-6 hours", "7-8 hours" |
+| `Dietary Habits` | object | Categories: Healthy, Moderate, etc. |
+| `Degree` | object | 28 unique values (e.g., B.Tech, M.Tech, etc.) |
+| `Have you ever had suicidal thoughts ?` | object | “Yes” or “No” |
+| `Work/Study Hours` | float | 0–12 hours |
+| `Financial Stress` | float | Scale 1–5 (has 3 missing values) |
+| `Family History of Mental Illness` | object | “Yes” or “No” |
+| `Depression` | int | Binary classification target (0: No, 1: Yes) |
+
+---
+
+ Observations
+- Imbalanced data**: `Depression` is slightly skewed towards 1 (58.5%).
+- Data type inconsistencies**: Some categorical values like "Sleep Duration" might be better as ordered categories.
+- Missing values**: Only `Financial Stress` has 3 missing entries — very minimal.
+- Job Satisfaction and Work Pressure** are very low or zero for almost all — may need further checking for relevance or data quality.
