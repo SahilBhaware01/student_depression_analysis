@@ -13,11 +13,3 @@ Date: 2025-04-17
 ## Imputation Methods Used
 - Financial Stress: Imputed with mean (skewness=-0.13)
 
-## Additional Notes
-- Generated visualizations of missing data patterns
-- Verified all missing values have been handled
-
-## Output Files
-- Cleaned Dataset: Student Depression Dataset - Cleaned.csv
-- Missing Values Report: Missing_Values_Report.csv
-- Visualizations: Saved in the 'plots' folder
